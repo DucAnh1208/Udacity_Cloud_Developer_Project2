@@ -37,3 +37,20 @@ export async function deleteLocalFiles(files: Array<string>) {
     fs.unlinkSync(file);
   }
 }
+
+// Status
+export const responsesStatus = {
+  SUCCESS: 200,
+  ERROR: 400
+}
+
+// Check image url
+export const checkImageURL = {
+  REGEX : /(http(s?):)([\/|.|\w|\s|-])*\.(?:jpg$|gif$|png$)|([\/|.|\w|\s|-])*\.(?:jpg$|gif$|png$)/
+}
+
+// Response Message
+export const responseMessage = {
+  IMAGE_URL_IS_REQUIRED : "image_url is required",
+  IMAGE_URL_NOT_EXIST : "image_url not exist"
+}
